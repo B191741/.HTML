@@ -1,0 +1,99 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{chemfig}
+%\usepackage{xskak}
+%\usepackage{modiagram}
+%opening
+\title{}
+\author{\huge Sonkamble.Amrapali\\
+cse-c5\\
+\huge b191741\\}
+\begin{document}
+\maketitle
+\section{\huge{1 knitting}}
+This class provides a very convenient way to introduce boxed diagrams. We are thus going to use our stock image a few more
+times. Also, it has a few features to make knitting instructions more readable, however, we can adapt them to make prettier
+documents for our purposes as well.\\\\\\\\
+\framebox(190px,150px){\framebox(300px,200px){}}\\\\\\\\
+\colorbox{yellow}{\framebox(400px,50px)[r]{\parbox[r]{400px}{We have a way of highlighting important text, or as was originally intended, important
+instructions. Feel free to choose whatever background and border colour you like when
+you replicate these features, but try to replicate the dimensions as well as you can}}}
+\colorbox{blue}{\framebox(420px,55px)
+{{\parbox[r]{400px}{\underline {\huge{Note}}\\
+This is a note. The above feature was introduced to typeset a sequence of knitting instructions.
+The first column is for the instruction, the second for the number of stitches. But hey, it looks
+cool!}}}}
+\section{\huge{2 Chess Notation}}
+\begin{center}
+ \textbf{Adolf Anderseen-Lionel Kieseritzky}\\
+ london,1851\\
+\newchessgame
+\setchessboard{boardfontsize=18.3}
+\chessboard[setfen=rnb1k1nr/p2p1ppp/3B4/1pbN1N1P/ 4P1P1/3P1Q2/PqP5/R4KR1]
+\end{center}
+In this position, Black played 18. . .\symbishop xg1, taking the rook. Had he opted for 18. . .\symqueen xa1, he would be better, but still in
+trouble. However, his choice allowed for a spectacular finish. 19 e5! Blunting the Queen’s protection of g7. 19. . . \symqueen xa1+.
+What else? The rook is en-prise. 20 Ke2 Na6. This covers the c7 square, as White was threatening Mate in 2, example
+like 20. . . h6 21 NXg7+ Kd8 22 Bc7m . 21 NXg7+ Kd8 22 Qf6+!
+\begin{center}
+\newchessgame
+\setchessboard{boardfontsize=18.3}
+\chessboard[setfen=r1bk2nr/p2p1pNp/n2B1Q2/1p1NP2P/6P1/ 3P4/P1P1K3/q5b1]
+\begin{end}
+A brilliant Queen sacrifice to deflect the Knight on g8 that protects e7 22. . . \symknight xf6 23 Be7m
+\begin{center}
+\newchessgame
+\setchessboard{boardfontsize=18.3}
+\chessboard[setfen= r1bk3r/p2pBpNp/n4n2/1p1NP2P/6P1/3P4/P1P1K3/q5b1]
+\begin{end}
+Chess enthusiasts will have immediately recognised this as The Immortal Game. Try typesetting this!
+\section{\huge{3 chemistry}}
+\subsection{3.1 chemical formulea}
+\chemfig{*6((-cl)-=(*6(-N=-=(-HN-[:30](-[:90])-[:330]-[:30]-[:330]-[:30]N(-[:90]-[:30]-[:330]OH)-[:330]-[:30])-=-=)}
+This is the molecule hydroxychloroquine, that recently shot to fame as a proposed cure for COVID-19. Please draw it. This
+is a helpful Overleaf tutorial to help you get started.
+\subsection{3.2 Molecular orbital diagrams}
+\begin{MOdiagram}[labels,names]
+ \atom[n]{left}{
+ 2p={0;up,up,up}
+ }
+ \atom[O]{right}{
+ 2p={2;pair,up,up}
+ }
+ \molecule[NO]{
+ 2pMO={1.8,.4;pair,pair,pair,up}}
+\end{MOdiagram}
+You’ve probably mugged this up for JEE, and definitely learnt more about this in CH 107.
+Draw the above molecular orbital diagram for nitric oxide. Again, exact dimensions needn’t match.
+4
+\section{\huge{4 Electrical circuits }}
+If you recall JEE Physics, this is a circuit diagram of an npn transistor used as an amplifier. Try your best to match this
+circuit. We have used the American voltages convention. It is alright if you can’t get the dimensions to match. What is
+important is that you know how to use circuitikz to draw circuits with the components used above, and mark voltages and
+currents.
+\section{\huge{5 Typecasting Exams}}
+Congratulations, you’re appointed as a TA for that course you loved last year. The prof, however, is busy with his research,
+and wants you to typeset an exam. LATEX, with its exam class can help you do just that!
+You’ll need to make a separate document, if you want to attempt this task. Your job is to imitate the exam.pdf that we
+have provided.
+\\\\
+\section{Problem 1}. Show that there exists no nontrivial unramified extensions of Q.
+Solution: If K/Q is a nontrivial number field, then | disc K| > 1. But then disc K has a prime factor
+so that some prime ramifies in K.
+Problem 2. Complete the following:
+(a) How does one prove a cotheorem?
+Z
+(b) Compute \inte cos x dx.
+
+a b
+(c) How does one square
+?
+c d
+Solution:
+(a) Use rollaries.
+(b) We have
+Z
+\end{document}
